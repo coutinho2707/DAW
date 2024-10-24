@@ -1,0 +1,110 @@
+@import '/imovel-site/assets/css/normalize.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 100 !important;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100vw;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70vw;
+
+    .brand {
+      height: 100%;
+      width: 50%;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            text-decoration: none;
+        }
+
+        h1 {
+          color: #01528A;
+          font-size: 26px;
+        }
+
+        img {
+            height: 36px;
+        }
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 100;
+
+        a {
+          text-decoration: none;
+          color: black;
+          top: 10px;
+          padding: 10px;
+
+          &:hover {
+            color: #0889D4;
+            border-bottom: 2px solid #0889D4;
+            font-weight: bold;
+          }
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            list-style-type: none;
+        }
+    }
+
+    button {
+      padding-left: 1rem;
+      text-transform: uppercase;
+      border: none;
+      width: 107px;
+      height: 46px;
+      padding: 4px;
+      gap: 0px;
+      border-radius: 4px;
+      background-color: #0889D4;
+      color: white;
+      font-weight: 500;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    #banner {
+      background-image: url('../img/background-house.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 550px;
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid #DCDCEB;
+      background-color: white;
+      color: #01528A;
+    }
+
+}
+
+header nav a.active {
+  color: #0889D4;
+  border-bottom: 2px solid #0889D4;
+}
