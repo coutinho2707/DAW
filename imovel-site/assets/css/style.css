@@ -14,6 +14,7 @@ header {
   width: 100%;
   .container{
       display: flex;
+      height: 74px;
   }
   
   .brand{
@@ -85,8 +86,8 @@ header {
 .container {
     margin: auto;
     justify-content: center;
+    align-items: center;
     width: 70vw;
-    height: 54px;
 
     .brand {
       height: 100%;
@@ -195,11 +196,8 @@ header nav a.active {
   font-size: 1.2rem;
 }
 
-section {
-  margin-top: 4rem;
-}
-
 section h2 {
+  margin-top: 4rem;
   text-align: center;
   font-weight: 300;
   padding: 2rem 0;
@@ -207,14 +205,8 @@ section h2 {
   color: #01528A;
 }
 
-#cards {
-
-}
-
-#cards .cards-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+section {
+  margin-top: 4rem;
 }
 
 #cards .card {
@@ -230,16 +222,22 @@ section h2 {
   position: relative;
 }
 
+.cards-content {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 h4 {
   font-weight: 400;
 }
 
 p {
-  margin: 1rem;
+  margin-top: 1rem;
   font-weight: 300;
-  text-align: center;
+  text-align: justify;
   color: #8f90a6;
-  max-height: 4.5rem;
   overflow: hidden;
   margin-bottom: 1.3rem;
 }
@@ -262,36 +260,215 @@ p {
 }
 
 #reasons {
-
-  .reasons-content {
+  
+  .reason-content {
     display: flex;
     justify-content: space-between;
   }
-  
-  .reasons {
-    border-left: 2px solid #01528A; 
+
+  .reason {
+    border-left: 2px solid #01528A;
     width: 100%;
 
     &:first-of-type {
-      border-left: none;
+      border-left: 0px;
     }
   }
-  
 
   p {
     text-align: center;
   }
 
-  .reasons-value{
-    font-size: 2rem;
+  .reason-value { 
+    font-weight: 300 !important;
     color: black;
+    font-size: 2rem;
   }
 
-  .reasons-label {
+  .reason-label {
     font-size: 1.5rem;
-    font-weight: 300;
     color: #8f90a6;
+    font-weight: 300;
   }
 }
 
+#specialists {
 
+
+  .specialists-content {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #01528A;
+
+    .specialist {
+      border: 2px solid #DCDCEB;
+      border-radius: 18px;
+      padding: 20px;
+
+      h4 {
+        color: #01528A;
+        font-weight: 400 !important;
+        font-size: 2rem;
+      }
+
+      .paragrafo-azul {
+        margin-top: 5px;
+        color: #01528A;
+      }
+
+      p {
+        margin-bottom: 0;
+        color: black;
+      }
+    }
+  }
+
+}
+
+
+#values {
+  .values-content{
+      display: flex;
+      gap: 1rem;
+  }
+  
+  .values-text{
+      display: flex;
+      flex-direction: column;
+      padding: 0 1.5rem;
+      gap: 1rem;
+  }
+
+  .values-text {
+      font-size: 1.1rem;
+      text-align: justify;
+      font-weight: 300;
+  }
+
+  .detail {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+
+      .value {
+          display: flex;
+          justify-content: space-between;
+          padding: 0.25rem;
+          p {
+              padding-left: 1.5rem;
+              background-image: url('../img/bullet-values.svg');
+              background-repeat: no-repeat;
+              background-position-y: bottom;
+              font-weight: 500 !important;
+              color: black;
+          }
+      }
+  }
+}
+
+footer {
+  background-color: #0889D4;
+  color: white;
+  margin-top: 3rem;
+  padding: 3rem 0;
+
+  p {
+    color: white;
+  }
+
+  .container {
+    h1 {
+      margin: 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-company {
+      width: 450px;
+
+      p {
+        font-size: 1rem;
+        font-weight: 300 !important;
+      }
+    }
+
+    .footer-brand {
+      background-image: url('../img/logo_imobiliaria_branca.svg');
+      background-repeat: no-repeat;
+      background-position-y: center;
+      background-size: 2rem;
+      padding-left: 2.5rem;
+      line-height: 2rem;
+      font-weight: 300 !important;
+      margin-bottom: 1rem;
+    }
+
+    .footer-menu {
+      font-size: 1rem !important;
+      font-weight: 300 !important;
+
+      ul {
+        list-style-type: none;
+        margin-top: 1rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          text-decoration: none;
+          color: white;
+          transition: 0.3s;
+
+          &:hover {
+            transition: 0.3s;
+            text-decoration: underline;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+
+    .footer-menu-title {
+      font-weight: 400 !important;
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      padding-top: 3rem;
+
+      span {
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 1rem;
+      }
+
+      .facebook {
+        background-image: url('../img/icon-facebook.svg');
+      }
+
+      .twitter {
+        background-image: url('../img/icon-twitter.svg');
+      }
+
+      .instagram {
+        background-image: url('../img/icon-instagram.svg');
+      }
+
+      .linkedin {
+        background-image: url('../img/icon-linkedin.svg');
+      }
+    }
+
+    .footer-copyright p {
+      text-align: center;
+    }
+
+  }
+}
